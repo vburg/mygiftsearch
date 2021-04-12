@@ -11,23 +11,32 @@
 
 <style>
 .navimages {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    margin-left: 20%;
 }
 
 .search {
     text-align: center;
 }
+
+nav > ul{
+  margin-left: 22%;
+}
+
+.cards {
+  text-align: center;
+}
+
 </style>
 
 </head>
 
 <body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark nav">
+  <a class="navbar-brand mr-auto" href="#"><img class="rounded-circle navimages" src='giftbox.jpg' alt='giftbox'></a>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark nav ml-auto">
-  <a class="navbar-brand" href="#"><img class="img-circle navimages" src='giftbox.jpg' alt='giftbox' style="width:40px;"></a>
-
-  <ul class="nav navbar-nav ml-auto">
+  <ul class="nav navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">Home</a>
     </li>
@@ -39,51 +48,33 @@
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
         Gifts by Occasion
       </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Halloween</a>
-        <a class="dropdown-item" href="#">Birthday</a>
-        <a class="dropdown-item" href="#">Mother's Day</a>
-      </div>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
         Types of Gifts
       </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Geek Gear</a>
-        <a class="dropdown-item" href="#">Movies & TV Shows</a>
-        <a class="dropdown-item" href="#">Office Jungle</a>
-        <a class="dropdown-item" href="#">Hobby</a>
-        <a class="dropdown-item" href="#">Indoor Games</a>
-        <a class="dropdown-item" href="#">Sports & Outdoors</a>
-        <a class="dropdown-item" href="#">Cooking Goodies</a>
-        <a class="dropdown-item" href="#">Reading</a>
-        <a class="dropdown-item" href="#">Home Decor</a>
-        <a class="dropdown-item" href="#">Apparel</a>
-        <a class="dropdown-item" href="#">Other Cool Gifts</a>
-      </div>
     </li>
 
     <li class="nav-item">
       <a class="nav-link" href="#">Blog</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact Us</a>
+      <a class="nav-link" href="#">Contact Us &nbsp;&nbsp;</a>
     </li>
   </ul>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <input style='width: 250px;' class="form-control mr-sm-2" type="text" placeholder="Search">
+    &nbsp;&nbsp;&nbsp;<button class="btn btn-success" type="submit">Search</button>
 </nav>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search"><button class="btn btn-success" type="submit">Search</button>
-  </form>
 </nav>
+
 
 <br><br><br><br>
 
-<div class='container-md'>
+<div class='container-sm'>
 <div class="card search">
   <div class="card-body search">
-    <h4 class="card-title">Who do you want to make happy?</h4>
+    <h3 class="card-title">Who do you want to make happy?</h3><br>
     <p class="card-text">
     I want to get a gift for 
     <select>
@@ -99,7 +90,7 @@
         <option value="friend">friend</option>
         <option value="coworker">coworker</option>
         <option value="acquaintance">acquaintance</option>
-    </select><br>
+    </select><br><br>
     They are
     <select>
         <option value="child">a child</option>
@@ -112,13 +103,150 @@
         <option value="50">under $50</option>
         <option value="100">under $100</option>
         <option value="infinite">infinite</option>
-    </select><br>
+    </select><br><br>
     </p>
     <button class="btn btn-success" type="submit">What to get?</button>
   </div>
 </div>
+</div>
+
+<br><br><br>
+
+<div class="container-sm">
+    <div class="row cards">
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img style='height: 270px;'class="card-img-top" src="shirt.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Sloth Loves Cat T-Shirt</b></h4><br>
+            <p class="card-text">
+              Of course two of the cutest animals on the
+              planet must like each other and you can
+              show their love with this adorable T-shirt!
+            </p>
+            <h3>$17.95</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img class="card-img-top" src="kit.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Men's Traveler Dopp Kit</b></h4><br>
+            <p class="card-text">
+              A compact high quality toiletry bag with 
+              handles and pockets, ready to be packed
+              and thrown in the bag as you prepare to go
+              on an adventure.<br>
+            </p>
+            <h3>$27.25</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img class="card-img-top" src="slippers.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Narwhal USB Foot Warmers</b></h4><br>
+            <p class="card-text">
+              The unicorn of the sea, the narwhal
+              probably can't keep a human away from
+              hypothermia, but these narwhale slippers
+              *will* keep your feet warm and toasty. <br>
+            </p>
+            <h3>$42.99</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img class="card-img-top" src="drone.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Predator Quadcopter Drone</b></h4><br>
+            <p class="card-text">
+              A tiny yet powerful and durable drone with
+              bright lights and excellent response to
+              controls, this Predator quadcopter drone
+              will be a lot of fun. <br>
+            </p>  
+            <h3>$39.99</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+  </div>
 
 <br><br>
+
+<div class="container-sm">
+    <div class="row cards">
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img style='height: 280px;'class="card-img-top" src="bulb.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Smart LED Light Bulb</b></h4>
+            <p class="card-text">
+              The best colorful lights are ones that you  
+              can change and control at will and from a
+              distance! You can change the color of this
+              Smart LED light bulb from your smartphone.<br>
+            </p>
+            <h3>$30.95</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img style='height: 280px;' class="card-img-top" src="mural.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Cobblestone Pathway Mural</b></h4><br>
+            <p class="card-text">
+              A gorgeous mural for a wall or a door that
+              shows an Edinburgh cobblestone pathway,
+              perfect to make you think of going on
+              adventures!<br>
+            </p>
+            <h3>$39.95</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img style='height: 280px;' class="card-img-top" src="decal.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Star Wars Han Solo in Carbonite</b></h4>
+            <p class="card-text">
+              Forever immortalized in carbonite (at least  
+              in the image), Hand Solo from Star Wars will  
+              look cold and dashing on your wall thanks
+              to this decal. <br>
+            </p>
+            <h3>$69.41</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 cards">
+        <div class="card" style="width:250px">
+          <img style='height: 280px;' class="card-img-top" src="pillow.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><b>Poop Emoji Pillow</b></h4><br>
+            <p class="card-text">
+              One of the funniest gag gifts out there, this
+              poop-shaped pillow makes for a funny gift - 
+              and a soft companion for a movie night. <br><br>
+            </p>  
+            <h3>$4.99</h3>
+            <button class="btn btn-success" type="submit">Check it out!</button>
+          </div>
+        </div>
+      </div>
+  </div>
 
 </body>
 </html>
