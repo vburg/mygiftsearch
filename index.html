@@ -11,8 +11,12 @@
 
 <style>
 .navimages {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav {
+    float: right;
 }
 </style>
 
@@ -24,7 +28,7 @@
 <div class='containder-fluid'>
 
 <!-- Bootstrap Nav Bar w/ Bootstrap Image and Bootstrap Button-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark nav">
   <a class="navbar-brand" href="#"><img class="img-circle navimages" src='giftbox.jpg' alt='giftbox'></a>
 
   <ul class="navbar-nav">
@@ -75,7 +79,6 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Contact Us</a>
     </li>
-    <br>
     <form class="form-inline" action="/action_page.php">
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-success" type="submit"><img class="img-circle navimages" src='search.jpg' alt='search'></button>
